@@ -178,7 +178,7 @@ const dog = {
   ],
 };
 
-const newFido = JSON.parse(JSON.stringify(dog));
+const newFido = JSON.parse(JSON.stringify(dog));  // => JSON.stringify(dog) is turning "dog" in to 
 newFido.toys[0].name = "Super-sized bone";
 
 console.log("Original dog");
