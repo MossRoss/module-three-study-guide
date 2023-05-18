@@ -52,7 +52,7 @@ import { message, anotherMessage } from "./messages.js";
 ## Renaming Imported Modules
 
 - What are some benefits of renaming imported variables?
-- What are some good conventions to follow when naming variables?
+- What are some good conventions to follow when naming variables? (use Camel Case, meaningful to what you are doing)
 
 ```js
 import {message as hello, anotherMessage} from "./messages.js";
@@ -60,8 +60,8 @@ import {message as hello, anotherMessage} from "./messages.js";
 
 ## Exporting a Function
 
-- What's the purpose of exporting a function?
-- How come we don't include the parameters in our export?
+- What's the purpose of exporting a function?  Ans. (To use the functionality of that function)
+- How come we don't include the parameters in our export? answ. (So we don't call the function here) if customMessage() it means we are calling it)
 
 ```js
 const customMessage = (message, name) => {
@@ -116,12 +116,13 @@ console.log(customMessage("Nice to see you,", "Ava"));
 - Do we need to `assert` the data type for JSON in the latest version of React?
 
 ```js
-import donuts from "./donuts.json" assert { type: "json" };
+import donuts from "./donuts.json" assert { type: "json" };  Answ. (importing name from a file assert is needed if you don't have  (Because web pack includes assert)
 ```
 
 ## Create a Custom Script in `package.json`
 
-- What benefits can you see from creating your own scripts?
+- What benefits can you see from creating your own scripts? 
+    Answ. Creating your own npm scripts empowers you to automate tasks, customize your development workflow, improve efficiency, and maintain a consistent and manageable project environment.
 
 ```json
 // package.json
